@@ -1,5 +1,6 @@
 "use client"
 
+import AppLogo from "@/components/common/app-logo"
 import ThemeToggle from "@/components/common/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -24,26 +25,22 @@ export default function NavbarMobile() {
 	}, [isMenuOpen])
 
 	return (
-		<div className="lg:hidden w-full">
-			<div className="flex h-16 items-center justify-between px-4">
-				{/* Logo */}
-				<h1 className="text-2xl font-bold dark:text-white">
-					Hoan<span className="text-primary-500">UI</span>
-				</h1>
-				{/* Hamburger Menu */}
+		<div className="lg:hidden top-0 right-0 left-0 z-50 fixed justify-around items-center bg-background dark:bg-background px-4 sm:px-6 py-2 sm:py-3 w-full h-16 transition-all duration-300">
+			<div className="flex justify-between items-center px-4 h-16">
+				<AppLogo />
 				<Button
 					variant="ghost"
 					size="icon"
 					onClick={() => setIsMenuOpen(!isMenuOpen)}
-					className="text-gray-900 hover:text-gray-900 hover:bg-white/10 border-0"
+					className="hover:bg-white/10 border-0 text-gray-900 hover:text-gray-900"
 				>
-					{isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+					{isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
 				</Button>
 			</div>
 			{/* Mobile Menu */}
 			{isMenuOpen && (
-				<div className="z-30 h-[90vh] px-6 pt-2 fixed flex max-w-full top-[var(--navbar-height)] inset-x-0 bottom-0 w-screen flex-col gap-2 overflow-y-auto backdrop-blur-xl backdrop-saturate-150 bg-background/70">
-					<div className="space-y-1 flex flex-col">
+				<div className="top-[var(--navbar-height)] bottom-0 z-30 fixed inset-x-0 flex flex-col gap-2 bg-background/70 backdrop-blur-xl backdrop-saturate-150 px-6 pt-2 w-screen max-w-full h-[90vh] overflow-y-auto">
+					<div className="flex flex-col space-y-1">
 						<Link href="/components" className={navbarItemClass}>
 							Components
 						</Link>
@@ -62,32 +59,32 @@ export default function NavbarMobile() {
 					</div>
 					{/* Mobile Search */}
 					<div className="mt-4">
-						<div className="flex items-center backdrop-blur-md border rounded-lg px-3 py-2">
-							<Search className="h-4 w-4 mr-2" />
+						<div className="flex items-center backdrop-blur-md px-3 py-2 border rounded-lg">
+							<Search className="mr-2 w-4 h-4" />
 							<Input
 								type="text"
 								placeholder="Search..."
-								className="bg-transparent border-0 focus:ring-0 focus:outline-none flex-1"
+								className="flex-1 bg-transparent border-0 focus:outline-none focus:ring-0"
 							/>
 						</div>
 					</div>
-					<div className="pt-4 border-t mt-4 flex items-center justify-between">
+					<div className="flex justify-between items-center mt-4 pt-4 border-t">
 						<div className="flex items-center space-x-4">
 							<Link
 								href="https://www.linkedin.com/in/phan-dinh-thanh-hoan/"
-								className="transition-colors duration-200 p-2 rounded-lg hover:bg-white/10"
+								className="hover:bg-white/10 p-2 rounded-lg transition-colors duration-200"
 								aria-label="LinkedIn"
 								target="_blank"
 							>
-								<Linkedin className="h-5 w-5" />
+								<Linkedin className="w-5 h-5" />
 							</Link>
 							<Link
 								href="https://github.com/thanhhoan-v2"
-								className="transition-colors duration-200 p-2 rounded-lg hover:bg-white/10 flex items-center space-x-1"
+								className="flex items-center space-x-1 hover:bg-white/10 p-2 rounded-lg transition-colors duration-200"
 								aria-label="Star on GitHub"
 								target="_blank"
 							>
-								<Github className="h-5 w-5" />
+								<Github className="w-5 h-5" />
 							</Link>
 						</div>
 						<ThemeToggle />

@@ -738,7 +738,7 @@ export function SearchBar() {
 				onClick={() => setOpen(true)}
 			>
 				<SearchIcon />
-				<span>Search</span>
+				<span className="mr-[50px]">Search</span>
 				<kbd className="hidden top-1.8 right-1.5 absolute sm:flex items-center gap-1 bg-muted opacity-100 px-1.5 border rounded-full h-5 font-medium pointer-events-none select-none">
 					<span className="text-sm">⌘</span>K
 				</kbd>
