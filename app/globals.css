@@ -1,10 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik+Puddles&display=swap");
 
 @import "tailwindcss";
 @import "tw-animate-css";
 
 * {
 	font-family: "Roboto Slab", serif;
+}
+
+.font-fascinate {
+	font-family: "Fascinate Inline", cursive;
+}
+
+.font-rubik-puddles {
+	font-family: "Rubik Puddles", cursive;
 }
 
 @custom-variant dark (&:is(.dark *));
