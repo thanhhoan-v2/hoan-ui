@@ -1,4 +1,10 @@
 import Hero from "@/components/common/hero"
+import { OpenInV0Button } from "@/components/common/open-in-v0-button"
+import PokemonPage from "@/registry/new-york/blocks/complex-component/page"
+import { ExampleForm } from "@/registry/new-york/blocks/example-form/example-form"
+import { ExampleCard } from "@/registry/new-york/blocks/example-with-css/example-card"
+import { HelloWorld } from "@/registry/new-york/blocks/hello-world/hello-world"
+
 // This page displays items from the custom registry.
 // You are free to implement this with your own design as needed.
 
@@ -6,7 +12,7 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
-			{/* <div className="flex flex-col gap-8 mx-auto px-4 py-8 max-w-3xl min-h-svh">
+			<div className="flex flex-col gap-8 mx-auto px-4 py-8 max-w-3xl min-h-svh">
 				<header className="flex flex-col gap-1">
 					<h1 className="font-bold text-3xl tracking-tight">Custom Registry</h1>
 				</header>
@@ -59,7 +65,7 @@ export default function Home() {
 						</div>
 					</div>
 				</main>
-			</div> */}
+			</div>
 		</>
 	)
 }

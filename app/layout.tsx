@@ -1,8 +1,8 @@
-import type { Metadata } from "next"
-import "./globals.css"
 import AppLayout from "@/components/common/app-layout"
 import Navbar from "@/components/common/header"
+import type { Metadata } from "next"
 import { ThemeProvider } from "next-themes"
+import "./globals.css"
 
 export const metadata: Metadata = {
 	title: "Hoan UI - Glassmorphism Component Library",
@@ -18,12 +18,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="system"
-					enableSystem
-					disableTransitionOnChange
-				>
+				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
 					<Navbar />
 					<AppLayout>{children}</AppLayout>
 				</ThemeProvider>
