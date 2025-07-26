@@ -1,6 +1,6 @@
 "use client"
 
-import { Tabs, TabsList, TabsTrigger } from "@/registry/default/annui/tabs-00"
+import { Tabs, TabsList, TabsTrigger } from "@/registry/default/hoanui/tabs-00"
 
 export default function Tabs00HoverUnderline() {
   return (
@@ -39,6 +39,6 @@ const TabsTriggerDemo = ({
 
 const TabsTriggerHoverUnderline = () => {
   return (
-    <span className="hidden group-hover/tabs-trigger:inline-block absolute h-1 rounded-full w-full bg-secondary left-0 bottom-0" />
+    <span className="hidden group-hover/tabs-trigger:inline-block bottom-0 left-0 absolute bg-secondary rounded-full w-full h-1" />
   )
 }

@@ -1,18 +1,18 @@
 "use client"
 
 import {
-  SelectFilter,
-  SelectFilterClear,
-  SelectFilterHeader,
-  SelectFilterItem,
-  SelectFilterList,
-  SelectFilterSelected,
-  SelectFilterTitle,
-} from "@/registry/default/annui/select-filter"
+    SelectFilter,
+    SelectFilterClear,
+    SelectFilterHeader,
+    SelectFilterItem,
+    SelectFilterList,
+    SelectFilterSelected,
+    SelectFilterTitle,
+} from "@/registry/default/hoanui/select-filter"
 
 export default function SelectFilterDemo() {
   return (
-    <div className="h-72 pt-12">
+    <div className="pt-12 h-72">
       <SelectFilter>
         <SelectFilterSelected className="h-12" />
         <SelectFilterList>

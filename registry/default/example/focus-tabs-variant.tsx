@@ -3,13 +3,13 @@
 import { LockIcon, SettingsIcon, UserIcon } from "lucide-react"
 
 import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-  TabsTriggerIcon,
-  TabsTriggerText,
-} from "@/registry/default/annui/focus-tabs"
+    Tabs,
+    TabsContent,
+    TabsList,
+    TabsTrigger,
+    TabsTriggerIcon,
+    TabsTriggerText,
+} from "@/registry/default/hoanui/focus-tabs"
 
 export default function FocusTabsVariant() {
   return (
@@ -73,7 +73,7 @@ const VariantContent = ({
 }) => {
   return (
     <TabsContent
-      className="bg-secondary text-secondary-foreground p-4 rounded-md h-32 w-72"
+      className="bg-secondary p-4 rounded-md w-72 h-32 text-secondary-foreground"
       value={value}
     >
       {children}

@@ -1,19 +1,19 @@
 "use client"
 
-import { ButtonHTMLAttributes, useState } from "react"
-import Image from "next/image"
-import Link from "next/link"
 import { cva } from "class-variance-authority"
 import { Moon, Sun } from "lucide-react"
 import { motion, useMotionValueEvent, useScroll } from "motion/react"
 import { useTheme } from "next-themes"
+import Image from "next/image"
+import Link from "next/link"
+import { ButtonHTMLAttributes, useState } from "react"
 
-import { cn } from "@/lib/utils"
-import { useIsMobile } from "@/hooks/use-mobile"
 import { Icons } from "@/components/ui/icon"
+import { useIsMobile } from "@/hooks/use-mobile"
+import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "size-6 rounded-full p-[5px] text-muted-foreground",
+  "p-[5px] rounded-full size-6 text-muted-foreground",
   {
     variants: {
       dark: {
@@ -40,7 +40,7 @@ const Header = () => {
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50 w-full h-16 flex items-center max-w-screen-xl container mx-auto"
+      className="top-0 right-0 left-0 z-50 fixed flex items-center mx-auto w-full max-w-screen-xl h-16 container"
       initial={{ opacity: 0, y: -10 }}
       animate={{
         opacity: 1,
@@ -53,7 +53,7 @@ const Header = () => {
       transition={{ duration: 0.5 }}
     >
       <motion.div
-        className="flex items-center justify-between w-full py-3 shadow-primary px-3 relative"
+        className="relative flex justify-between items-center shadow-primary px-3 py-3 w-full"
         animate={{
           marginTop: scrollMargin > criticalValue / 2 ? "2rem" : "0",
           backgroundColor:
@@ -72,18 +72,18 @@ const Header = () => {
             className="flex items-center gap-2 font-medium text-xl"
             icon={isMobile}
           >
-            <Image src="/logo.png" alt="AnnUI" width={32} height={32} />
-            <span className="max-md:hidden">AnnUI</span>
+            <Image src="/logo.png" alt="HoanUI" width={32} height={32} />
+            <span className="max-md:hidden">HoanUI</span>
           </Item>
         </Link>
-        <div className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2">
+        <div className="top-1/2 right-1/2 absolute -translate-y-1/2 translate-x-1/2">
           <Link href="/docs">
             <Item>Documentation</Item>
           </Link>
         </div>
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <Link href="https://github.com/annui-org/annui">
+          <Link href="https://github.com/hoanui-org/hoanui">
             <Item icon>
               <Icons.Github />
             </Item>
@@ -177,13 +177,13 @@ const Footer = () => {
       className="bg-background/80 backdrop-blur-sm border-t border-border/60"
     >
       <motion.div
-        className="container flex items-center justify-between h-16 px-4"
+        className="flex justify-between items-center px-4 h-16 container"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
       >
         <div className="flex items-center gap-4">
-          <Link href="https://github.com/annui-org/annui">
+          <Link href="https://github.com/hoanui-org/hoanui">
             <Item icon>
               <Icons.Github />
             </Item>
@@ -195,12 +195,13 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} AnnUI. MIT License.
+        <div className="text-muted-foreground text-sm">
+          © {new Date().getFullYear()} HoanUI. MIT License.
         </div>
       </motion.div>
     </motion.footer>
   )
 }
 
-export { Header, Item, Footer }
+export { Footer, Header, Item }
+

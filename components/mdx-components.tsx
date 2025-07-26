@@ -1,20 +1,20 @@
 import { Step, Steps } from "fumadocs-ui/components/steps"
 import {
-  Tab as FumadocsTab,
-  Tabs as FumadocsTabs,
+    Tab as FumadocsTab,
+    Tabs as FumadocsTabs,
 } from "fumadocs-ui/components/tabs"
 
 import {
-  CLIInstall,
-  ComponentInstall,
-  ManualInstall,
+    CLIInstall,
+    ComponentInstall,
+    ManualInstall,
 } from "@/components/component-install"
 import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/registry/default/annui/focus-tabs"
+    Tabs,
+    TabsContent,
+    TabsList,
+    TabsTrigger,
+} from "@/registry/default/hoanui/focus-tabs"
 
 import { ComponentPreview } from "./component-preview"
 import { ComponentSource } from "./component-source"

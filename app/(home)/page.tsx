@@ -1,60 +1,60 @@
 import {
-  BecomeSponsor,
-  DashedCircle,
-  DashedLineContainer,
-  Feature,
-  GetStarted,
-  Github,
-  HorizontalDashedLine,
-  VerticalDashedLine,
+    BecomeSponsor,
+    DashedCircle,
+    DashedLineContainer,
+    Feature,
+    GetStarted,
+    Github,
+    HorizontalDashedLine,
+    VerticalDashedLine,
 } from "./page.client"
 
 export default function HomePage() {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="flex flex-col items-center text-center py-32">
+    <div className="mx-auto px-4 py-12 container">
+      <div className="flex flex-col items-center py-32 text-center">
         <DashedLineContainer>
           <VerticalDashedLine
             className="md:-left-10"
             width="calc(100% + 80px)"
             mobileWidth="100%"
           />
-          <h1 className="relative text-5xl sm:text-7xl font-bold py-5">
-            AnnUI
+          <h1 className="relative py-5 font-bold text-5xl sm:text-7xl">
+            HoanUI
           </h1>
           <VerticalDashedLine />
 
-          <div className="py-10 flex flex-col items-center px-4">
-            <p className="max-w-2xl text-xl text-muted-foreground">
-              <span className="text-primary font-medium">AnnUI</span> is a
+          <div className="flex flex-col items-center px-4 py-10">
+            <p className="max-w-2xl text-muted-foreground text-xl">
+              <span className="font-medium text-primary">HoanUI</span> is a
               collection of{" "}
-              <span className="text-primary font-medium">
+              <span className="font-medium text-primary">
                 reusable components
               </span>{" "}
               that you can{" "}
-              <span className="text-primary font-medium">copy and paste</span>{" "}
+              <span className="font-medium text-primary">copy and paste</span>{" "}
               into your web apps.
             </p>
           </div>
           <VerticalDashedLine />
 
-          <div className="flex items-center justify-center">
-            <div className="flex flex-col items-center justify-center gap-4 relative py-10 px-8">
+          <div className="flex justify-center items-center">
+            <div className="relative flex flex-col justify-center items-center gap-4 px-8 py-10">
               <div className="flex flex-wrap justify-center gap-4">
                 <GetStarted />
                 <Github />
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <div className="flex items-center gap-2 text-sm text-gray-500">
+                <div className="flex items-center gap-2 text-gray-500 text-sm">
                   <span className="text-green-500">✓</span>
                   Open Source
                 </div>
-                <div className="flex items-center gap-2 text-sm text-gray-500">
+                <div className="flex items-center gap-2 text-gray-500 text-sm">
                   <span className="text-green-500">✓</span>
                   MIT License
                 </div>
-                <div className="flex items-center gap-2 text-sm text-gray-500">
+                <div className="flex items-center gap-2 text-gray-500 text-sm">
                   <span className="text-green-500">✓</span>
                   Customizable
                 </div>
@@ -89,13 +89,13 @@ export default function HomePage() {
         </DashedLineContainer>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-r border-dashed border-primary/20 mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-20 border-primary/20 border-r border-dashed">
         {features.map((feature) => (
           <Feature key={feature.title} {...feature} />
         ))}
       </div>
 
-      <div className="border-t border-dashed border-primary/20">
+      <div className="border-primary/20 border-t border-dashed">
         <BecomeSponsor />
       </div>
     </div>

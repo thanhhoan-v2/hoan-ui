@@ -1,10 +1,10 @@
 "use client"
 
-import Link from "next/link"
 import { motion, useAnimation } from "motion/react"
+import Link from "next/link"
 
-import { cn } from "@/lib/cn"
 import { useIsMobile } from "@/hooks/use-mobile"
+import { cn } from "@/lib/cn"
 
 const DashedLineContainer = ({ children }: { children: React.ReactNode }) => {
   const container = {
@@ -19,7 +19,7 @@ const DashedLineContainer = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <motion.div
-      className="flex flex-col size-full relative"
+      className="relative flex flex-col size-full"
       variants={container}
       initial="initial"
       animate="visible"
@@ -123,7 +123,7 @@ const Feature = ({
 }) => {
   return (
     <motion.div
-      className="p-6 bg-background/50 backdrop-blur-sm border-l border-t border-dashed border-primary/20 relative overflow-hidden group"
+      className="group relative bg-background/50 backdrop-blur-sm p-6 border-primary/20 border-t border-l border-dashed overflow-hidden"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -135,7 +135,7 @@ const Feature = ({
       />
 
       <motion.h3
-        className="text-xl font-semibold mb-2"
+        className="mb-2 font-semibold text-xl"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
@@ -153,7 +153,7 @@ const Feature = ({
       </motion.p>
 
       <motion.div
-        className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-accent to-accent/50 pointer-events-none"
+        className="right-0 -bottom-1 left-0 absolute bg-gradient-to-r from-accent to-accent/50 h-1 pointer-events-none"
         initial={{ scaleX: 0 }}
         whileHover={{ scaleX: 1 }}
         transition={{ duration: 0.3 }}
@@ -165,7 +165,7 @@ const Feature = ({
 const BecomeSponsor = () => {
   return (
     <motion.div
-      className="bg-background/50 backdrop-blur-sm border-x border-b border-dashed border-primary/20 relative overflow-hidden group py-20 px-4"
+      className="group relative bg-background/50 backdrop-blur-sm px-4 py-20 border-primary/20 border-x border-b border-dashed overflow-hidden"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -178,7 +178,7 @@ const BecomeSponsor = () => {
 
       <motion.div className="flex flex-col items-center gap-4">
         <motion.h3
-          className="text-xl font-semibold"
+          className="font-semibold text-xl"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -192,7 +192,7 @@ const BecomeSponsor = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          If you find AnnUI helpful, please consider sponsoring us to support
+          If you find HoanUI helpful, please consider sponsoring us to support
           our development
         </motion.p>
 
@@ -200,7 +200,7 @@ const BecomeSponsor = () => {
           href="https://discord.gg/EnzWx4Ck"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-colors"
+          className="bg-accent hover:bg-accent/90 px-4 py-2 rounded-lg transition-colors text-accent-foreground"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -209,7 +209,7 @@ const BecomeSponsor = () => {
       </motion.div>
 
       <motion.div
-        className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-accent to-accent/50 pointer-events-none"
+        className="right-0 -bottom-1 left-0 absolute bg-gradient-to-r from-accent to-accent/50 h-1 pointer-events-none"
         initial={{ scaleX: 0 }}
         whileHover={{ scaleX: 1 }}
         transition={{ duration: 0.3 }}
@@ -235,7 +235,7 @@ const GetStarted = () => {
     <Link href="/docs">
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="px-4 py-2 relative overflow-hidden h-10"
+        className="relative px-4 py-2 h-10 overflow-hidden"
         onHoverStart={() => {
           controls.start("animate")
         }}
@@ -243,9 +243,9 @@ const GetStarted = () => {
           controls.start("initial")
         }}
       >
-        <motion.div className="absolute inset-0 bg-primary text-primary-foreground rounded-lg" />
+        <motion.div className="absolute inset-0 bg-primary rounded-lg text-primary-foreground" />
         <motion.span
-          className="relative z-[2] text-nowrap"
+          className="z-[2] relative text-nowrap"
           variants={textVariants}
           animate={controls}
           initial="initial"
@@ -258,7 +258,7 @@ const GetStarted = () => {
           animate={controls}
           variants={variants}
           transition={{ duration: 0.3 }}
-          className="bg-accent absolute inset-0 z-[1] rounded-md"
+          className="z-[1] absolute inset-0 bg-accent rounded-md"
         />
       </motion.button>
     </Link>
@@ -267,10 +267,10 @@ const GetStarted = () => {
 
 const Github = () => {
   return (
-    <Link href="https://github.com/annui-org/annui" target="_blank">
+    <Link href="https://github.com/hoanui-org/hoanui" target="_blank">
       <motion.button
         whileTap={{ scale: 0.95 }}
-        className="px-8 py-2 relative overflow-hidden border border-input rounded-lg h-10"
+        className="relative px-8 py-2 border border-input rounded-lg h-10 overflow-hidden"
       >
         Github
       </motion.button>
@@ -279,12 +279,7 @@ const Github = () => {
 }
 
 export {
-  VerticalDashedLine,
-  HorizontalDashedLine,
-  Feature,
-  BecomeSponsor,
-  DashedLineContainer,
-  DashedCircle,
-  GetStarted,
-  Github,
+    BecomeSponsor, DashedCircle, DashedLineContainer, Feature, GetStarted,
+    Github, HorizontalDashedLine, VerticalDashedLine
 }
+

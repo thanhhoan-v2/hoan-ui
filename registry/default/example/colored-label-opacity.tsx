@@ -1,4 +1,4 @@
-import { ColoredLabel } from "@/registry/default/annui/colored-label"
+import { ColoredLabel } from "@/registry/default/hoanui/colored-label"
 
 export default function ColoredLabelColor() {
   return (

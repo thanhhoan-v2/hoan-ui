@@ -4,15 +4,15 @@ import { ChevronRight, Home, LogOut, Settings } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuItemDescription,
-  DropdownMenuItemIcon,
-  DropdownMenuItemTitle,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/registry/default/annui/dropdown-menu-00"
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuItemDescription,
+    DropdownMenuItemIcon,
+    DropdownMenuItemTitle,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from "@/registry/default/hoanui/dropdown-menu-00"
 
 export default function DropdownMenu00Demo() {
   return (

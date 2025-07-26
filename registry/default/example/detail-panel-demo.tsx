@@ -1,31 +1,31 @@
 "use client"
 
 import {
-  ArrowRight,
-  CommandIcon,
-  EllipsisIcon,
-  MessageSquareIcon,
-  PlusIcon,
+    ArrowRight,
+    CommandIcon,
+    EllipsisIcon,
+    MessageSquareIcon,
+    PlusIcon,
 } from "lucide-react"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
-import { ColoredLabel } from "../annui/colored-label"
+import { ColoredLabel } from "../hoanui/colored-label"
 import {
-  DetailPanel,
-  DetailPanelHeader,
-  DetailPanelHeaderAction,
-  DetailPanelHeaderActions,
-  DetailPanelHeaderTitle,
-  DetailPanelProperties,
-  DetailPanelProperty,
-  DetailPanelPropertyLabel,
-  DetailPanelPropertyValue,
-  DetailPanelSection,
-  DetailPanelSectionContent,
-  DetailPanelSectionDescription,
-  DetailPanelSectionTitle,
-} from "../annui/detail-panel"
+    DetailPanel,
+    DetailPanelHeader,
+    DetailPanelHeaderAction,
+    DetailPanelHeaderActions,
+    DetailPanelHeaderTitle,
+    DetailPanelProperties,
+    DetailPanelProperty,
+    DetailPanelPropertyLabel,
+    DetailPanelPropertyValue,
+    DetailPanelSection,
+    DetailPanelSectionContent,
+    DetailPanelSectionDescription,
+    DetailPanelSectionTitle,
+} from "../hoanui/detail-panel"
 
 export default function DetailPanelDemo() {
   return (
@@ -69,7 +69,7 @@ export default function DetailPanelDemo() {
         <DetailPanelSectionContent className="flex gap-1.5">
           <ColoredLabel color="#A294F9">Code</ColoredLabel>
           <ColoredLabel color="#99BC85">Frontend</ColoredLabel>
-          <button className="text-xs text-muted-foreground border border-primary/30 border-dashed rounded-md size-5 flex items-center justify-center">
+          <button className="flex justify-center items-center border border-primary/30 border-dashed rounded-md size-5 text-muted-foreground text-xs">
             <PlusIcon className="size-3" />
           </button>
         </DetailPanelSectionContent>
@@ -88,12 +88,12 @@ export default function DetailPanelDemo() {
             name="Fuma Nama"
             avatar="https://github.com/fuma-nama.png"
           />
-          <button className="h-5 w-fit text-sm gap-1.5 flex items-center justify-center">
-            <div className="w-5 flex items-center justify-center text-muted-foreground">
+          <button className="flex justify-center items-center gap-1.5 w-fit h-5 text-sm">
+            <div className="flex justify-center items-center w-5 text-muted-foreground">
               <PlusIcon className="size-[14px]" />
             </div>
             <span className="font-medium">Add assignee</span>
-            <div className="flex items-center justify-center text-muted-foreground">
+            <div className="flex justify-center items-center text-muted-foreground">
               <CommandIcon className="size-[14px]" />A
             </div>
           </button>
@@ -103,7 +103,7 @@ export default function DetailPanelDemo() {
       <DetailPanelSection>
         <DetailPanelSectionTitle>Subtasks</DetailPanelSectionTitle>
         <DetailPanelSectionContent>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-muted-foreground text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             quos.
           </p>
@@ -115,7 +115,7 @@ export default function DetailPanelDemo() {
 
 function LinkIcon() {
   return (
-    <span className="flex items-center justify-center bg-primary/20 rounded-full p-[1px] group-hover:bg-primary/30 transition-colors duration-200">
+    <span className="flex justify-center items-center bg-primary/20 group-hover:bg-primary/30 p-[1px] rounded-full transition-colors duration-200">
       <ArrowRight className="-rotate-45" />
     </span>
   )
@@ -128,12 +128,12 @@ function Assignee({ name, avatar }: { name: string; avatar: string }) {
         <AvatarImage src={avatar} />
         <AvatarFallback>{name.slice(0, 2)}</AvatarFallback>
       </Avatar>
-      <span className="text-sm font-medium">{name}</span>
+      <span className="font-medium text-sm">{name}</span>
       <div className="flex items-center gap-0.5 ml-auto">
-        <button className="text-xs text-muted-foreground size-5 flex items-center justify-center">
+        <button className="flex justify-center items-center size-5 text-muted-foreground text-xs">
           <MessageSquareIcon className="size-3" />
         </button>
-        <button className="text-xs text-muted-foreground size-5 flex items-center justify-center">
+        <button className="flex justify-center items-center size-5 text-muted-foreground text-xs">
           <EllipsisIcon className="size-3" />
         </button>
       </div>

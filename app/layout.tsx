@@ -1,20 +1,20 @@
 import "./global.css"
 
-import type { ReactNode } from "react"
-import { Metadata } from "next"
 import { RootProvider } from "fumadocs-ui/provider"
+import { Metadata } from "next"
+import type { ReactNode } from "react"
 
-import { fontMono, fontSans } from "@/lib/fonts"
 import { Toaster } from "@/components/ui/sonner"
+import { fontMono, fontSans } from "@/lib/fonts"
 import { cn } from "@/registry/default/lib/utils"
 
 export const metadata: Metadata = {
   title: {
-    default: "AnnUI - Modern React Component Library",
-    template: "%s | AnnUI",
+    default: "HoanUI - Modern React Component Library",
+    template: "%s | HoanUI",
   },
   description:
-    "AnnUI is a collection of re-usable components that you can copy and paste into your web apps.",
+    "HoanUI is a collection of re-usable components that you can copy and paste into your web apps.",
   keywords: [
     "Next.js",
     "React",
@@ -39,20 +39,20 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.annui.org",
-    title: "AnnUI - Modern React Component Library",
+    url: "https://www.hoanui.org",
+    title: "HoanUI - Modern React Component Library",
     description:
-      "AnnUI is a collection of reusable components that you can copy and paste into your web apps.",
-    siteName: "AnnUI",
+      "HoanUI is a collection of reusable components that you can copy and paste into your web apps.",
+    siteName: "HoanUI",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AnnUI - Modern React Component Library",
+    title: "HoanUI - Modern React Component Library",
     description:
-      "AnnUI is a collection of reusable components that you can copy and paste into your web apps.",
+      "HoanUI is a collection of reusable components that you can copy and paste into your web apps.",
     creator: "@liorael",
   },
-  metadataBase: new URL("https://www.annui.org"),
+  metadataBase: new URL("https://www.hoanui.org"),
 }
 
 export default function Layout({ children }: { children: ReactNode }) {

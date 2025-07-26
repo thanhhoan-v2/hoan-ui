@@ -11,7 +11,7 @@ export const ui: Registry = [
     ],
     files: [
       {
-        path: "annui/focus-tabs.tsx",
+        path: "hoanui/focus-tabs.tsx",
         type: "registry:ui",
       },
     ],
@@ -23,7 +23,7 @@ export const ui: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "annui/icon-hover-button.tsx",
+        path: "hoanui/icon-hover-button.tsx",
         type: "registry:ui",
       },
     ],
@@ -34,7 +34,7 @@ export const ui: Registry = [
     dependencies: ["react-use-measure", "motion"],
     files: [
       {
-        path: "annui/adaptive-container.tsx",
+        path: "hoanui/adaptive-container.tsx",
         type: "registry:ui",
       },
     ],
@@ -45,7 +45,7 @@ export const ui: Registry = [
     dependencies: ["@radix-ui/react-dropdown-menu"],
     files: [
       {
-        path: "annui/dropdown-menu-00.tsx",
+        path: "hoanui/dropdown-menu-00.tsx",
         type: "registry:ui",
       },
     ],
@@ -60,7 +60,7 @@ export const ui: Registry = [
     ],
     files: [
       {
-        path: "annui/vercel-tabs.tsx",
+        path: "hoanui/vercel-tabs.tsx",
         type: "registry:ui",
       },
     ],
@@ -76,7 +76,7 @@ export const ui: Registry = [
     registryDependencies: ["colored-label"],
     files: [
       {
-        path: "annui/select-filter.tsx",
+        path: "hoanui/select-filter.tsx",
         type: "registry:ui",
       },
     ],
@@ -91,7 +91,7 @@ export const ui: Registry = [
     ],
     files: [
       {
-        path: "annui/tabs-00.tsx",
+        path: "hoanui/tabs-00.tsx",
         type: "registry:ui",
       },
     ],
@@ -102,7 +102,7 @@ export const ui: Registry = [
     dependencies: ["@radix-ui/react-tabs"],
     files: [
       {
-        path: "annui/tabs-01.tsx",
+        path: "hoanui/tabs-01.tsx",
         type: "registry:ui",
       },
     ],
@@ -113,7 +113,7 @@ export const ui: Registry = [
     dependencies: ["motion", "@radix-ui/react-use-controllable-state"],
     files: [
       {
-        path: "annui/image-carousel.tsx",
+        path: "hoanui/image-carousel.tsx",
         type: "registry:ui",
       },
     ],
@@ -124,7 +124,7 @@ export const ui: Registry = [
     dependencies: ["motion", "@radix-ui/react-slot"],
     files: [
       {
-        path: "annui/detail-panel.tsx",
+        path: "hoanui/detail-panel.tsx",
         type: "registry:ui",
       },
     ],
@@ -135,7 +135,7 @@ export const ui: Registry = [
     dependencies: ["colord", "@radix-ui/react-slot"],
     files: [
       {
-        path: "annui/colored-label.tsx",
+        path: "hoanui/colored-label.tsx",
         type: "registry:ui",
       },
     ],

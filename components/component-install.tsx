@@ -1,13 +1,13 @@
 import { CodeIcon, TerminalIcon } from "lucide-react"
 
 import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-  TabsTriggerIcon,
-  TabsTriggerText,
-} from "@/registry/default/annui/focus-tabs"
+    Tabs,
+    TabsContent,
+    TabsList,
+    TabsTrigger,
+    TabsTriggerIcon,
+    TabsTriggerText,
+} from "@/registry/default/hoanui/focus-tabs"
 
 const ComponentInstall = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -39,4 +39,5 @@ const ManualInstall = ({ children }: { children: React.ReactNode }) => {
   return <TabsContent value="manual">{children}</TabsContent>
 }
 
-export { ComponentInstall, CLIInstall, ManualInstall }
+export { CLIInstall, ComponentInstall, ManualInstall }
+

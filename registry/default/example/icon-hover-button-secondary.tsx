@@ -3,10 +3,10 @@
 import { PlusIcon } from "lucide-react"
 
 import {
-  IconHoverButton,
-  IconHoverButtonIcon,
-  IconHoverButtonText,
-} from "@/registry/default/annui/icon-hover-button"
+    IconHoverButton,
+    IconHoverButtonIcon,
+    IconHoverButtonText,
+} from "@/registry/default/hoanui/icon-hover-button"
 
 export default function IconHoverButtonSecondary() {
   return (

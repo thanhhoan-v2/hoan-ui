@@ -1,6 +1,6 @@
 "use client"
 
-import { Tabs, TabsList, TabsTrigger } from "@/registry/default/annui/tabs-00"
+import { Tabs, TabsList, TabsTrigger } from "@/registry/default/hoanui/tabs-00"
 
 export default function Tabs00Demo() {
   return (

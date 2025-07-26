@@ -1,22 +1,22 @@
-import { FC, type HTMLAttributes, type ReactNode } from "react"
+import type { PageTree } from "fumadocs-core/server"
+import { TreeContextProvider } from "fumadocs-ui/provider"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import type { PageTree } from "fumadocs-core/server"
-import { TreeContextProvider } from "fumadocs-ui/provider"
+import { FC, type HTMLAttributes, type ReactNode } from "react"
 
+import { RootToggle, type Option } from "@/components/layout/root-toggle"
 import { cn } from "@/lib/cn"
 import { getSidebarTabs, TabOptions } from "@/lib/get-sidebar-tabs"
-import { RootToggle, type Option } from "@/components/layout/root-toggle"
 
 import { Sidebar, SidebarProps } from "./docs/sidebar"
 import { DocsNavbar, LayoutBody, SidebarItems } from "./notebook.client"
 import {
-  SidebarContent,
-  SidebarGroup,
-  SidebarHeader,
-  SidebarInset,
-  SidebarTrigger,
+    SidebarContent,
+    SidebarGroup,
+    SidebarHeader,
+    SidebarInset,
+    SidebarTrigger,
 } from "./ui/sidebar"
 
 interface SidebarOptions extends SidebarProps {
@@ -85,10 +85,10 @@ export function DocsLayout({
         <SidebarInset>
           <div className="w-full min-w-0 max-w-[var(--fd-content-width)] [--fd-nav-height:3.5rem]">
             <DocsNavbar />
-            <div className="flex flex-row z-[1]">{children}</div>
+            <div className="z-[1] flex flex-row">{children}</div>
           </div>
           <div
-            className="min-w-[var(--fd-sidebar-width)] flex-1"
+            className="flex-1 min-w-[var(--fd-sidebar-width)]"
             style={{
               marginInlineStart: "calc(var(--fd-sidebar-width) * -1)",
             }}
@@ -106,8 +106,8 @@ function SidebarHeaderItems({ children }: { children: ReactNode }) {
         href="/"
         className="inline-flex items-center gap-1.5 py-1 font-medium"
       >
-        <Image src="/logo.png" alt="AnnUI" width={24} height={24} />
-        AnnUI
+        <Image src="/logo.png" alt="HoanUI" width={24} height={24} />
+        HoanUI
       </Link>
       {children}
     </SidebarGroup>

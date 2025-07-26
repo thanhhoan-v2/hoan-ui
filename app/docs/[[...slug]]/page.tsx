@@ -1,15 +1,15 @@
-import { Metadata } from "next"
-import { notFound } from "next/navigation"
 import defaultMdxComponents from "fumadocs-ui/mdx"
 import {
-  DocsBody,
-  DocsDescription,
-  DocsPage,
-  DocsTitle,
+    DocsBody,
+    DocsDescription,
+    DocsPage,
+    DocsTitle,
 } from "fumadocs-ui/page"
+import { Metadata } from "next"
+import { notFound } from "next/navigation"
 
-import { source } from "@/lib/source"
 import { components } from "@/components/mdx-components"
+import { source } from "@/lib/source"
 
 export default async function Page(props: {
   params: Promise<{ slug?: string[] }>
@@ -53,7 +53,7 @@ export async function generateMetadata(props: {
 
   const description =
     page.data.description ??
-    "AnnUI is a collection of reusable components that you can copy and paste into your web apps."
+    "HoanUI is a collection of reusable components that you can copy and paste into your web apps."
 
   return {
     title: page.data.title,

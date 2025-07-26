@@ -3,13 +3,13 @@
 import { Check, Circle, Pencil, Trash, X } from "lucide-react"
 
 import {
-  ImageCarousel,
-  ImageCarouselItem,
-  ImageCarouselItemDescription,
-  ImageCarouselItemIcon,
-  ImageCarouselItemImage,
-  ImageCarouselItemTitle,
-} from "@/registry/default/annui/image-carousel"
+    ImageCarousel,
+    ImageCarouselItem,
+    ImageCarouselItemDescription,
+    ImageCarouselItemIcon,
+    ImageCarouselItemImage,
+    ImageCarouselItemTitle,
+} from "@/registry/default/hoanui/image-carousel"
 
 export default function ImageCarouselDemo() {
   return (

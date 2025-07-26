@@ -1,10 +1,10 @@
 "use client"
 
 import {
-  Tabs,
-  TabsList,
-  TabsTrigger,
-} from "@/registry/default/annui/vercel-tabs"
+    Tabs,
+    TabsList,
+    TabsTrigger,
+} from "@/registry/default/hoanui/vercel-tabs"
 
 export default function VercelTabsDemo() {
   return (

@@ -1,22 +1,22 @@
 "use client"
 
-import { type HTMLAttributes, type ReactNode } from "react"
-import Image from "next/image"
-import Link from "next/link"
 import type { PageTree } from "fumadocs-core/server"
 import { SearchOnly, useTreeContext, useTreePath } from "fumadocs-ui/provider"
+import Image from "next/image"
+import Link from "next/link"
+import { type HTMLAttributes, type ReactNode } from "react"
 
-import { cn } from "@/lib/cn"
 import { useIsMobile } from "@/hooks/use-mobile"
+import { cn } from "@/lib/cn"
 
 import { Navbar } from "./docs/navbar"
 import {
-  SidebarFolder,
-  SidebarFolderContent,
-  SidebarFolderLink,
-  SidebarFolderTrigger,
-  SidebarItem,
-  SidebarSeparator,
+    SidebarFolder,
+    SidebarFolderContent,
+    SidebarFolderLink,
+    SidebarFolderTrigger,
+    SidebarItem,
+    SidebarSeparator,
 } from "./docs/sidebar"
 import { LargeSearchToggle, SearchToggle } from "./layout/search-toggle"
 import { ThemeToggle } from "./layout/theme-toggle"
@@ -128,25 +128,25 @@ export function DocsNavbar() {
   const isMobile = useIsMobile()
 
   return (
-    <Navbar id="nd-subnav" className="h-14 md:gap-1.5 z-[2]">
+    <Navbar id="nd-subnav" className="z-[2] md:gap-1.5 h-14">
       {!open && <SidebarTrigger className="-ms-1.5 size-8" />}
       <SearchOnly>
-        <LargeSearchToggle className="w-full max-w-[240px] rounded-lg max-md:hidden" />
+        <LargeSearchToggle className="max-md:hidden rounded-lg w-full max-w-[240px]" />
       </SearchOnly>
       <div className="md:hidden">
         <Link href="/">
-          <Image src="/logo.png" alt="AnnUI" width={24} height={24} />
+          <Image src="/logo.png" alt="HoanUI" width={24} height={24} />
         </Link>
       </div>
-      <div className="flex flex-1 flex-row items-center gap-6 px-2"></div>
+      <div className="flex flex-row flex-1 items-center gap-6 px-2"></div>
       <SearchOnly>
         <SearchToggle className="md:hidden" />
       </SearchOnly>
-      <div className="flex flex-row items-center empty:hidden max-lg:hidden"></div>
-      <ThemeToggle className="p-0 max-md:hidden" />
+      <div className="empty:hidden max-lg:hidden flex flex-row items-center"></div>
+      <ThemeToggle className="max-md:hidden p-0" />
       <Link
-        className="ml-auto [&_svg]:size-5 [&_svg]:fill-current hover:bg-secondary hover:text-secondary-foreground rounded-md p-1.5"
-        href="https://github.com/annui-org/annui"
+        className="hover:bg-secondary [&_svg]:fill-current ml-auto p-1.5 rounded-md [&_svg]:size-5 hover:text-secondary-foreground"
+        href="https://github.com/hoanui-org/hoanui"
         target="_blank"
       >
         <Icons.Github />

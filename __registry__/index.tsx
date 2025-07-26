@@ -11,11 +11,11 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/annui/focus-tabs.tsx",
+        path: "registry/default/hoanui/focus-tabs.tsx",
         type: "registry:ui",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/annui/focus-tabs.tsx")),
+      component: React.lazy(() => import("@/registry/default/hoanui/focus-tabs.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -27,11 +27,11 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/annui/icon-hover-button.tsx",
+        path: "registry/default/hoanui/icon-hover-button.tsx",
         type: "registry:ui",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/annui/icon-hover-button.tsx")),
+      component: React.lazy(() => import("@/registry/default/hoanui/icon-hover-button.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -43,11 +43,11 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/annui/adaptive-container.tsx",
+        path: "registry/default/hoanui/adaptive-container.tsx",
         type: "registry:ui",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/annui/adaptive-container.tsx")),
+      component: React.lazy(() => import("@/registry/default/hoanui/adaptive-container.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -59,11 +59,11 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/annui/dropdown-menu-00.tsx",
+        path: "registry/default/hoanui/dropdown-menu-00.tsx",
         type: "registry:ui",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/annui/dropdown-menu-00.tsx")),
+      component: React.lazy(() => import("@/registry/default/hoanui/dropdown-menu-00.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -75,11 +75,11 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/annui/vercel-tabs.tsx",
+        path: "registry/default/hoanui/vercel-tabs.tsx",
         type: "registry:ui",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/annui/vercel-tabs.tsx")),
+      component: React.lazy(() => import("@/registry/default/hoanui/vercel-tabs.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -91,11 +91,11 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: ["colored-label"],
       files: [{
-        path: "registry/default/annui/select-filter.tsx",
+        path: "registry/default/hoanui/select-filter.tsx",
         type: "registry:ui",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/annui/select-filter.tsx")),
+      component: React.lazy(() => import("@/registry/default/hoanui/select-filter.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -107,11 +107,11 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/annui/tabs-00.tsx",
+        path: "registry/default/hoanui/tabs-00.tsx",
         type: "registry:ui",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/annui/tabs-00.tsx")),
+      component: React.lazy(() => import("@/registry/default/hoanui/tabs-00.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -123,11 +123,11 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/annui/tabs-01.tsx",
+        path: "registry/default/hoanui/tabs-01.tsx",
         type: "registry:ui",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/annui/tabs-01.tsx")),
+      component: React.lazy(() => import("@/registry/default/hoanui/tabs-01.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -139,11 +139,11 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/annui/image-carousel.tsx",
+        path: "registry/default/hoanui/image-carousel.tsx",
         type: "registry:ui",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/annui/image-carousel.tsx")),
+      component: React.lazy(() => import("@/registry/default/hoanui/image-carousel.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -155,11 +155,11 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/annui/detail-panel.tsx",
+        path: "registry/default/hoanui/detail-panel.tsx",
         type: "registry:ui",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/annui/detail-panel.tsx")),
+      component: React.lazy(() => import("@/registry/default/hoanui/detail-panel.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -171,11 +171,11 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/annui/colored-label.tsx",
+        path: "registry/default/hoanui/colored-label.tsx",
         type: "registry:ui",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/annui/colored-label.tsx")),
+      component: React.lazy(() => import("@/registry/default/hoanui/colored-label.tsx")),
       source: "",
       category: "",
       subcategory: "",

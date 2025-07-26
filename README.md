@@ -1,6 +1,6 @@
-# AnnUI
+# HoanUI
 
-AnnUI is a collection of re-usable components that you can copy and paste into your web apps.
+HoanUI is a collection of re-usable components that you can copy and paste into your web apps.
 
 ## ✨ Features
 
@@ -27,11 +27,11 @@ npx shadcn@latest add button
 
 ## 📖 Documentation
 
-Visit [annui.org](https://annui.org) for complete documentation.
+Visit [hoanui.org](https://hoanui.org) for complete documentation.
 
 ## 💖 Credits
 
-AnnUI is heavily inspired by these excellent projects:
+HoanUI is heavily inspired by these excellent projects:
 
 - [shadcn/ui](https://ui.shadcn.com)
 - [Radix UI](https://www.radix-ui.com)
@@ -39,4 +39,4 @@ AnnUI is heavily inspired by these excellent projects:
 
 ## 📄 License
 
-MIT © [AnnUI](LICENSE)
+MIT © [HoanUI](LICENSE)
