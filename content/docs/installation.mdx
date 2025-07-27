@@ -1,0 +1,124 @@
+---
+title: Installation
+description: How to install and configure Hoan UI in your project.
+---
+
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
+## Automatic Installation
+
+The easiest way to get started is to use the `hoan-ui` CLI to install the components you need.
+
+<Steps>
+<Step>
+### Create your project
+
+If you don't have a Next.js project, create one first.
+
+```bash
+npx create-next-app@latest my-app --typescript --tailwind --eslint
+```
+</Step>
+
+<Step>
+### Run the CLI
+
+Run the `init` command to configure your project.
+
+```bash
+npx hoan-ui@latest init
+```
+This will configure `tailwind.config.ts`, `components.json` and install required dependencies.
+</Step>
+
+<Step>
+### Add components
+
+You can now add any component to your project.
+
+```bash
+npx hoan-ui@latest add button
+```
+</Step>
+</Steps>
+
+## Manual Installation
+
+If you prefer to install manually, follow these steps.
+
+<Steps>
+<Step>
+### Install dependencies
+
+Install the required dependencies for your project.
+
+```bash
+pnpm add tailwindcss-animate class-variance-authority clsx tailwind-merge
+```
+</Step>
+
+<Step>
+### Configure Tailwind CSS
+
+Update your `tailwind.config.ts` to include the necessary paths and plugins.
+
+```ts title="tailwind.config.ts"
+import type { Config } from "tailwindcss"
+
+const config = {
+  // ...
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config
+
+export default config
+```
+
+</Step>
+
+<Step>
+### Configure `components.json`
+
+Create a `components.json` file in the root of your project with the following content:
+
+```json title="components.json"
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "tailwind.config.ts",
+    "css": "app/globals.css",
+    "baseColor": "slate",
+    "cssVariables": true
+  },
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils"
+  }
+}
+```
+</Step>
+
+<Step>
+### Add the `cn` utility
+
+Create a `lib/utils.ts` file and add the `cn` utility function.
+
+```ts title="lib/utils.ts"
+import { type ClassValue, clsx } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+```
+</Step>
+
+<Step>
+### Copy component code
+
+You can now copy the code for any component from the documentation into your project.
+</Step>
+
+</Steps>

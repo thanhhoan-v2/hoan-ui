@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 @import "tailwindcss";
-@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/catppuccin.css";
 @import "fumadocs-ui/css/preset.css";
 @import "tw-animate-css";
+
+* {
+  font-family: 'Fira code', monospace;
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -116,6 +121,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

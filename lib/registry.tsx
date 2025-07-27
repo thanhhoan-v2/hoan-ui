@@ -25,6 +25,12 @@ export interface ParsedRegistryItem extends RegistryItem {
 const componentModules = {
   'hello-world': () =>
     import('@/registry/new-york/blocks/hello-world/hello-world').then(m => m.HelloWorld),
+  'example-form': () =>
+    import('@/registry/new-york/blocks/example-form/example-form').then(m => m.ExampleForm),
+  'complex-component': () =>
+    import('@/registry/new-york/blocks/complex-component/components/pokemon-page').then(m => m.default),
+  'example-with-css': () =>
+    import('@/registry/new-york/blocks/example-with-css/example-card').then(m => m.ExampleCard),
 };
 
 export async function getRegistryItem(name: string): Promise<ParsedRegistryItem | null> {

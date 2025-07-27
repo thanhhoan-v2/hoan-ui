@@ -11,14 +11,19 @@ export const baseOptions: BaseLayoutProps = {
   nav: {
     title: (
       <>
-        <svg aria-label='Logo' height='24' width='24' xmlns='http://www.w3.org/2000/svg'>
-          <title>My App</title>
-          <circle cx={12} cy={12} fill='currentColor' r={12} />
+        <svg aria-label='Logo' height='24' width='24' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'>
+          <title>Hoan UI</title>
+          <path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/>
         </svg>
-        My App
+        Hoan UI
       </>
     ),
   },
   // see https://fumadocs.dev/docs/ui/navigation/links
-  links: [],
+  // links: [
+  //   {
+  //     text: 'Documentation',
+  //     url: '/docs',
+  //   },
+  // ],
 };

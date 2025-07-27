@@ -1,0 +1,51 @@
+---
+title: Pokemon Browser
+description: A complex component showing hooks, libs and multiple components working together
+---
+
+import { ComponentPreview } from "@/components/common/component-preview";
+
+A sophisticated component that demonstrates advanced React patterns including custom hooks, API integration, and component composition. Browse and search through Pokemon data with a clean, interactive interface.
+
+<ComponentPreview component='complex-component' />
+
+## Features
+
+- **Custom Hooks**: Reusable logic with `usePokemon` hook
+- **API Integration**: Fetches data from external Pokemon API
+- **Component Composition**: Multiple components working together
+- **Loading States**: Proper loading and error state handling
+- **TypeScript**: Fully typed interfaces and data structures
+- **Responsive Design**: Optimized for all screen sizes
+
+## Architecture
+
+This component showcases several important architectural patterns:
+
+### Custom Hook (`usePokemon`)
+- Encapsulates Pokemon data fetching logic
+- Manages loading and error states
+- Provides reusable interface for Pokemon data
+
+### Component Structure
+- **PokemonPage**: Main container component
+- **PokemonCard**: Individual Pokemon display
+- **PokemonImage**: Optimized image component with fallbacks
+
+### Data Layer
+- Type-safe Pokemon data structures
+- API integration utilities
+- Error handling and retry logic
+
+## Use Cases
+
+Perfect for learning or demonstrating:
+- Complex state management
+- API integration patterns
+- Component composition
+- Custom hook development
+- TypeScript best practices
+
+## Registry Dependencies
+
+- `card` - UI card component for layout structure
